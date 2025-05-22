@@ -1,3 +1,18 @@
-**Update:** In March 2025 I decided to revisit this project to make it a better reflection of my current skill level (it was originally written in November '23). My planned upgrades include improving the logic (more functional/modular, less five paragraph essay functions), adding the remaining rules to make it a full chess game, and converting from a cli to gui (likely using pygame). Stay tuned!
+# Chess Variant Game (Python)
+A simplified command-line chess variant built from scratch in Python
 
-This program plays an abstract board game on the command line that is a variant of chess. The starting position for the game is the normal starting positon for standard chess, and, like standard chess, white moves first. The winner is the first player to capture all of an opponent's pieces of one type: e.g. capturing all of the opponent's knights would win the game or caputuring all of the opponent's pawns would win the game. The king is not a special piece in this game -- there is no check or checkmate. Pieces move and capture the same as in standard chess, except there is no castling, en passant or pawn promotion. Each pawn can move two spaces forward on its first move but not on subsequent moves. 
+In May 2025, I decided to revisit and upgrade this project, originally written in November 2023, to better reflect my current skill level. Planned improvements include modularizing the game logic, implementing the full ruleset, and converting the interface from command-line to a graphical version using Pygame.
+
+## The current version features:
+
+    A playable chess variant where the goal is to capture all of one piece type (e.g. all knights or all pawns).
+
+    Classic chess movements for all pieces, with simplified rules (no check/checkmate, no castling, en passant, or promotion).
+
+    A fully functional board system, piece movement validation, and win condition tracking.
+
+    Clean separation between game logic (game.py), base piece behavior (piece.py), and individual piece rules (subpieces.py).
+
+This project emphasizes fundamental OOP principles (inheritance, encapsulation), board manipulation, and rule validation in a turn-based game context.
+
+Stay tuned for the GUI upgrade and final rule implementation!
